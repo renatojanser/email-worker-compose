@@ -4,6 +4,8 @@ volumes:
 services: 
     db:
         image: postgres:9.6
+        environment:
+            POSTGRES_PASSWORD: "123456"
         volumes: 
             # volumes dos dados
             - dados:/var/lib/postgresql/data
